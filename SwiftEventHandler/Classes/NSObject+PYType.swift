@@ -36,7 +36,7 @@ public extension String {
         if (self.isEqual(Key)) {
            return NSObject.py_conversionType(message: message, success: success, failure: failure)
         }else {
-            py_log("\n 事件匹配失败【\(self) != \(Key ?? "")】")
+//            py_log("\n 事件匹配失败【\(self) != \(Key ?? "")】")
             return nil
         }
     }
