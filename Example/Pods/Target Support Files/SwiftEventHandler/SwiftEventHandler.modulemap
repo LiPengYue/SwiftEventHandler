@@ -1,0 +1,6 @@
+framework module SwiftEventHandler {
+  umbrella header "SwiftEventHandler-umbrella.h"
+
+  export *
+  module * { export * }
+}

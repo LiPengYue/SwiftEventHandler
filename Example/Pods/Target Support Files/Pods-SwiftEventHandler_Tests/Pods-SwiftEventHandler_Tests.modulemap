@@ -1,0 +1,6 @@
+framework module Pods_SwiftEventHandler_Tests {
+  umbrella header "Pods-SwiftEventHandler_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
