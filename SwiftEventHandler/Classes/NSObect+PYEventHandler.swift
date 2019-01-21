@@ -29,10 +29,10 @@ private func py_log(_ item: Any) {
 
 extension NSObject {
     /// block 定义了 两个参数 1. 区分数据的key； 2. 传递的数据
-    typealias EVENTCALLBACKBLOCK = (_ signalKey: String, _ messageObj: Any)->(Any)?
+    public typealias EVENTCALLBACKBLOCK = (_ signalKey: String, _ messageObj: Any)->(Any)?
     
     /// 对 sender 的block进行赋值
-    func py_received(sendler Sendler: NSObject?,  eventCallBack: @escaping EVENTCALLBACKBLOCK) {
+    public func py_received(sendler Sendler: NSObject?,  eventCallBack: @escaping EVENTCALLBACKBLOCK) {
         self.py_received_private(sendler: Sendler, eventCallBack: eventCallBack)
     }
     
@@ -47,7 +47,7 @@ extension NSObject {
     ///   - Sender: 发送消息的对象
     ///   - Relay: 接收消息的对象
     /// - warning: 其实就是把sender的block赋值 为 对relay的block的调用
-    class func py_stitchChannelFunc(sender Sender: NSObject?, relay Relay: NSObject?) {
+    public class func py_stitchChannelFunc(sender Sender: NSObject?, relay Relay: NSObject?) {
         self.py_stitchChannel_privateFunc(sender: Sender, relay: Relay)
     }
 }
@@ -137,10 +137,10 @@ private extension NSObject {
 private func getTopVC() -> (UIViewController?) {
     var window = UIApplication.shared.keyWindow
     //是否为当前显示的window
-    if window?.windowLevel != UIWindow.Level.normal{
+    if window?.windowLevel != UIWindowLevelNormal{
         let windows = UIApplication.shared.windows
         for  windowTemp in windows{
-            if windowTemp.windowLevel == UIWindow.Level.normal{
+            if windowTemp.windowLevel == UIWindowLevelNormal{
                 window = windowTemp
                 break
             }

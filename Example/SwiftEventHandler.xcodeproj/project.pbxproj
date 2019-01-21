@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C4F3774BA8AB8CF97DA9FA61 /* Pods_SwiftEventHandler_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C91DF83F22D225D9DA9885B /* Pods_SwiftEventHandler_Example.framework */; };
+		E3B933DA21F572B600685C4C /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B933D821F572B600685C4C /* BView.swift */; };
+		E3B933DB21F572B600685C4C /* CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B933D921F572B600685C4C /* CView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +42,14 @@
 		607FACE51AFB9204008FA782 /* SwiftEventHandler_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftEventHandler_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6AEF1CF08166DEA26542A46E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		87EA170FBF7628A41451D828 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6AEF1CF08166DEA26542A46E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		87EA170FBF7628A41451D828 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		952C4600A069D9AB02F05C91 /* Pods-SwiftEventHandler_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEventHandler_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEventHandler_Tests/Pods-SwiftEventHandler_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6941F21C5776B09265376A2 /* Pods-SwiftEventHandler_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEventHandler_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEventHandler_Example/Pods-SwiftEventHandler_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CCEF4E0E525D59C557B2AB62 /* SwiftEventHandler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftEventHandler.podspec; path = ../SwiftEventHandler.podspec; sourceTree = "<group>"; };
+		CCEF4E0E525D59C557B2AB62 /* SwiftEventHandler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftEventHandler.podspec; path = ../SwiftEventHandler.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0B4496C4CD272D96477BC51 /* Pods-SwiftEventHandler_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEventHandler_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEventHandler_Example/Pods-SwiftEventHandler_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B933D821F572B600685C4C /* BView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BView.swift; path = ../../../../../../Desktop/SwiftSendEventTool/SwiftSendEventTool/SwiftSendEventTool/BView.swift; sourceTree = "<group>"; };
+		E3B933D921F572B600685C4C /* CView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CView.swift; path = ../../../../../../Desktop/SwiftSendEventTool/SwiftSendEventTool/SwiftSendEventTool/CView.swift; sourceTree = "<group>"; };
 		F22605D117403EAF49DF0993 /* Pods-SwiftEventHandler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEventHandler_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEventHandler_Tests/Pods-SwiftEventHandler_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E3B933D821F572B600685C4C /* BView.swift */,
+				E3B933D921F572B600685C4C /* CView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -213,10 +219,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 67VM37Q2CL;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 67VM37Q2CL;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -357,7 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B933DB21F572B600685C4C /* CView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E3B933DA21F572B600685C4C /* BView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +514,7 @@
 			baseConfigurationReference = E0B4496C4CD272D96477BC51 /* Pods-SwiftEventHandler_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				INFOPLIST_FILE = SwiftEventHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -519,6 +530,7 @@
 			baseConfigurationReference = B6941F21C5776B09265376A2 /* Pods-SwiftEventHandler_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				INFOPLIST_FILE = SwiftEventHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -533,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 952C4600A069D9AB02F05C91 /* Pods-SwiftEventHandler_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -555,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F22605D117403EAF49DF0993 /* Pods-SwiftEventHandler_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
